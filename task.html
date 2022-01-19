@@ -1,0 +1,452 @@
+<html>
+	<head>
+		<title>Farm2Home - FrontPage</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			.container{    <!-- THE NAVBAR -->
+				width:100%;
+				height:70px;
+				margin-left:100px;
+				}
+			.logo{
+				width : 25%;
+				float:left;
+				margin-top:10px;
+				margin-left100px;
+				}	
+			.opticons{
+				width : 58.33%;
+				float:left;
+				margin-top:19px;
+				
+				}
+			.opticons li {
+				list-style-type:none;
+				display:inline;
+				padding:17px;
+				font-size:15px;
+				text-transform: uppercase;
+				}
+			.icons{
+				width :16.66%;
+				margin-top:20px;
+				float:left;
+				display:inline;
+				
+				}
+			.herobanner{
+				background:url("images/banner.png");
+				height: 730px;
+				background-size: cover;
+				width:100%;
+				}
+			.text-block{
+				position: absolute;
+				top:330px;
+				left:500px;
+				text-align:center;
+				}
+			.had{
+				font-size:45px;
+				}
+			.subhad{
+				margin-top:10px;
+				text-transform: uppercase;
+				}	
+			.para{
+				margin-top:30px;
+				}	
+			.herobannerbtn-a{
+				background-color:#ff0000;
+				position: absolute;
+				color:white;
+				top:80%;
+				left:35%;
+				font-size: 16px;
+				padding: 12px 24px;
+				border: none;
+				cursor: pointer;
+				border-radius: 5px;
+				text-align: center;
+				width:191px;
+				height:53;
+				}	
+			.herobannerbtn-b{
+				background:transparent;
+				position: absolute;
+				color:black;
+				top: 80%;
+				left:49%;
+				font-size: 16px;
+				padding: 12px 24px;
+				border:1px solid black;
+				cursor: pointer;
+				border-radius: 5px;
+				text-align: center;
+				width:191px;
+				height:53;
+				}
+			.herobanner2{
+				padding: 100px 0px;
+				max-width: 1270px;
+				width:100%;
+				margin:0 auto;
+				display: flex;
+				justify-content: space-between;
+				}	
+			.part-a{
+				width:40%;
+				float:left;
+				}	
+			.part-b{
+				width:40%;
+				float:left;
+				margin-left:200px;
+				margin-top:40px;
+				}	
+			.herobannerbtn-a{
+				background-color:#ff0000;
+				position: absolute;
+				color:white;
+				font-size: 16px;
+				padding: 12px 24px;
+				border: none;
+				cursor: pointer;
+				border-radius: 5px;
+				text-align: center;
+				width:191px;
+				height:53;
+				}
+			.herobannerbtn-b{
+				background:transparent;
+				position: absolute;
+				color:black;
+				left:72%;
+				font-size: 16px;
+				padding: 12px 24px;
+				border:1px solid black;
+				cursor: pointer;
+				border-radius: 5px;
+				text-align: center;
+				width:191px;
+				height:53;
+				}
+			.herobanner3{         
+				display: flex;
+				max-height:530px;
+				}	
+			.part1{
+				background-image:url("images/Screenshot.png");
+				background-color: #333333;
+				background-size: 100%;
+				width: 50%;
+				display: flex;
+				justify-content: center;
+				}
+			.part1_a{
+				color:white;
+				margin-left:110px;
+				}	
+			.part1_a p{
+				text-align:left;
+				margin-top:112px;
+				font-size:45px;
+				max-height:275px;
+				border-bottom: double;
+				text-transform: capitalize;
+				max-width:550px;
+				}
+			.part1_b {
+				text-align:left;
+				margin-top:40px;
+				font-size:25px;
+				text-transform: uppercase;
+				}
+			.part1_c{
+				text-align:left;
+				margin-top:30px;
+				}	
+			.part2{
+				float:left;
+				background-color:#ff0000;
+				width:50%;
+				height:530px;
+				margin-right:0px;
+				}	
+			input{
+				display;inline;
+				}	
+			.fname{
+				text-align:left;
+				width:254px;
+				height:46;
+				border-radius:5px;
+				margin-left:90px;
+				padding:10px;
+				border:none;
+				}
+			.lname{
+				text-align:left;
+				width:254px;
+				height:46;
+				border-radius:5px;
+				margin-top:86px;
+				margin-left:20px;
+				padding:10px;
+				border:none;
+				}
+			.comp{
+				text-align:left;
+				width:254px;
+				height:46;
+				border-radius:5px;
+				margin-left:90px;
+				padding:10px;
+				border:none;
+				}
+			.phone{
+				text-align:left;
+				width:254px;
+				height:46;
+				border-radius:5px;
+				margin-top:26px;
+				margin-left:20px;
+				padding:10px;
+				border:none;
+				}
+			.email{
+				text-align:left;
+				width:530px;
+				height:46px;
+				border-radius:5px;
+				margin-top:26px;
+				margin-left:90px;
+				padding:10px;
+				border:none;
+				}
+			.com{
+				text-align:left;
+				width:530px;
+				height:105;
+				border-radius:5px;
+				margin-top:26px;
+				margin-left:90px;
+				padding:10px;
+				border:none;
+				}
+			.bt5{
+				background:transparent;
+				position: absolute;
+				color:white;
+				left:1200px;
+				top:1890px;
+				font-size: 16px;
+				border:1px solid white;
+				cursor: pointer;
+				border-radius: 5px;
+				text-align: center;
+				width:191px;
+				height:53;
+				}
+			.herobanner4{
+				max-width: 600px;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				}	
+			.listpart{	
+				list-style: none;
+				margin-top: 65px;
+				font-size: 18px;
+				margin-bottom: 18px;
+				display: flex;
+				padding: 0 35px;
+				text-align:left;
+				}
+			.listpart li{
+				font-size: 14px;
+				list-style: none;
+				margin-bottom: 15px;
+				color:black;
+				text-align:left;
+				text-transform: capitalize;
+				}	
+			.list-a {
+				padding: 0 35px;
+				color:red;
+				text-align:center;
+				width:250px;
+				text-transform: uppercase;
+				}	
+			.list-b{
+				padding: 0 35px;
+				color:red;
+				width:257px;
+				text-align:center;
+				text-transform: uppercase;
+				}		
+			.list-c{
+				padding: 0 35px;
+				color:red;
+				width:257px;
+				text-align:center;
+				text-transform: uppercase;
+				}	
+			.data-part{
+				max-width: 700px;
+				width: 100%;
+				margin-left:50px;
+				margin-top:40px;
+				}
+			.data-parta{
+				font-size: 14px;
+				margin-bottom: 20px;
+				}
+			.input-part input{
+				display: flex;
+				padding:12px 15px;
+				width:334px;
+				margin-right: 15px;
+				}
+			.input-part button{
+				position: absolute;
+				color:white;
+				left:1240px;
+				top:2110px;
+				background-color:#515357;
+				font-size: 16px;
+				border:1px solid white;
+				cursor: pointer;
+				border-radius: 5px;
+				text-align: center;
+				width:191px;
+				height:53;
+				float:left;
+				}	
+			.follow i{
+				margin-right: 34px;
+				margin-top:10px;
+				font-size: 18px;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="logo">
+				<img src="images/BloomsyBox.png">
+			</div>
+			<div class="opticons">
+				<ul>
+					<li >subscribe</li>
+					<li>how its work</li>
+					<li>our vision</li>
+					<li>shop</li>
+				</ul>
+			</div>
+			<div class="icons">
+				<img src="images/Vector Smart Object1.png">
+				<img src="images/Vector Smart Object.png" style="padding-left:31px;">
+			</div>
+		</div>
+		<div class="herobanner">
+			<div class="text-block">
+				<b class="had">Beautiful flowers</b>
+				<h5 class="subhad">By subscription</h5>
+				<p class="para">Handpicked, hand-tied bouquets sent from sustainable farms around <br>
+				the globe. Choose from weekly, bi-weekly, or monthly deliveries.</p>
+			</div>
+			<button class="herobannerbtn-a">Get started</button>
+			<button class="herobannerbtn-b">Gift flowers</button>
+		</div>
+		<div class="herobanner2">
+			<div class="part-a">
+				<img src="images/pages.png">
+			</div>
+			<div class="part-b">
+				<h5 class="subhad">Think the Farm to Table trend</h5>
+				<b class="had">Farm To Table</b>
+				<p>Think the Farm to Table trend is only for food? Think again! Your<br> 
+				flowers are arranged right on the farm where they are grown and sent<br> 
+				directly to your doorstep. We partner with sustainable farms around <br>
+				the globe to provide you with the most beautiful and unique blooms<br> 
+				around. Each stem we ship is hand-picked and cut 2-4 days before<br>
+				you receive them, ensuring quality and freshness.
+				</p>
+				<button class="herobannerbtn-a">view more</button>
+				<button class="herobannerbtn-b">Gift flowers</button>
+			</div>
+		</div>
+		<div class="herobanner3">
+			<div class="part1">
+				<div class="part1_a">
+					<p> office decoration that Make us Feel Good</p>
+					<div class="part1_b">sign up now for free consultation</div>
+					<div class="part1_c">Get fresh Blooms for where you work every week! We’ll get you set up with a free vase <br>
+						for your first order to make sure your Blooms are perfectly displayed.</div>
+				</div>
+			</div>
+			<div class="part2">
+				<input type="txt" class="fname" id="fname" placeholder="First Name" name="name">
+				<input type="txt" class="lname" id="lname" placeholder="Last Name" name="name">
+				<input type="txt" class="comp" id="comp" placeholder="Company" name="name">
+				<input type="txt" class="phone" id="phone" placeholder="Phone" name="name">
+				<input type="email" class="email" id="email" placeholder="Email" name="name">
+				<input type="txt" class="com" id="com" placeholder="comment" name="name">
+				<button class="bt5">submit</button>
+			</div>	
+		</div>
+		<div class="herobanner4">
+			<div class="listpart">
+				<div class="list-a">
+					<p class="list-items1">Get-Started</p>
+						<ul>
+							<li>Subscribe</li>
+							<li>Give gift</li>
+							<li>Press</li>
+							<li>Blog</li>
+							<li>office Box</li>
+						</ul>
+				</div>
+				<div class="list-b">
+					<p class="list-items2">Main Menu</p>
+						<ul>
+							<li>Closing Gift</li>
+							<li>Affiliate Program</li>
+							<li>Wholesale flowers</li>
+						</ul>
+				</div>
+				<div class="list-c">
+					<p class="list-items3">Need help?</p>
+						<ul>
+							<li>contact</li>
+							<li>FAQs</li>
+							<li>Privacy policy</li>
+							<li>Return & refund</li>
+							<li>shipping</li>
+						</ul>
+				</div>	
+			</div>
+			<div class="data-part">
+				<p>Let's keep in touch</p>
+                    <p class="data-parta">Get $5 off, and receive special offers, news and flower inspration</p>
+                    <div class="input-part">
+						<input type="email" name="" id="" placeholder="Your Email address"> 
+							<button>Sign me up</button> 
+					</div>
+                    <div class="follow">
+						<i class="fa fa-facebook fa-lg"></i>
+						<i class="fa fa-instagram fa-lg"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-pinterest"></i>
+						<i class="fa fa-youtube"></i>
+                    </div>
+			</div>
+		</div>
+	</body>
+</html>	
